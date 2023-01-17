@@ -33,12 +33,20 @@
 
 
 @media only screen and (max-width: 767px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    .app-container {
-        width: 100%;
-        height: 100%;
-    }
+  body {
+      margin: 0;
+      padding: 0;
+  }
+  .app-container {
+    background-color: black;
+    background-image: (
+    45deg,
+    black,
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+    
 }
