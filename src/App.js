@@ -18,16 +18,19 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-  if (displayedImages.length === imageKeys.length) {
-    setDisplayedImages([]);
-  }
-}, [displayedImages]);
+    if (displayedImages.length === imageKeys.length) {
+      setDisplayedImages([]);
+    }
+  }, [displayedImages]);
 
 
   return (
     <div className="app-container">
+      <div className="hint-container">
+        <h3>Hint: Refresh the page</h3>
+      </div>
       <img
-        className="centered-image"
+        className="centered-image white-border"
         src={images(imageKeys[currentImageIndex])}
         alt=""
       />
