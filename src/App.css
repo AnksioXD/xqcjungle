@@ -1,0 +1,17 @@
+.app-container {
+  background-color: black;
+  background-image: (
+    45deg,
+    black,
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.centered-image {
+  width: 700px;
+  height: 500px;
+  object-fit: fill;
+}
