@@ -18,10 +18,10 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    if (displayedImages.length === imageKeys.length) {
-      setDisplayedImages([]);
-    }
-  }, [displayedImages]);
+  if (displayedImages.length === imageKeys.length) {
+    setDisplayedImages([]);
+  }
+}, [displayedImages]);
 
 
   return (
